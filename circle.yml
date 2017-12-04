@@ -1,0 +1,12 @@
+machine:
+    services:
+        - docker
+
+dependencies:
+    override:
+        - docker build -t civisanalytics/civis-services-shiny .
+
+test:
+    override:
+      - docker run --entrypoint=/bin/bash civisanalytics/civis-services-shiny -c "echo BUILDS OK"
+      - docker run --entrypoint=/bin/bash civisanalytics/civis-services-shiny -c "Rscript -e \"library(shiny); q(save = 'no')\""
