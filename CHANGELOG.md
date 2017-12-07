@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.0.1] - 2017-12-07
+
+### Added
+- Functionality to put shiny apps in a non-root directory.
+
 ## [1.0.0] - 2017-12-01
 
 ### Added
