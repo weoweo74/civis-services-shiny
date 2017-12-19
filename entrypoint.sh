@@ -50,6 +50,8 @@ install_deps() {
 
 run_shiny_app() {
   export R_LIBS="${R_LIBS:-$LIB_DIR}"
+  export GITHUB_PAT="${GITHUB_PAT:-$REPO_HTTP_TOKEN}"
+
   ABSOLUTE_APP_DIR="$APP_DIR/$REPO_PATH_DIR"
   exec R -e "shiny::runApp(appDir='$ABSOLUTE_APP_DIR', port=3838, host='0.0.0.0')"
 }
