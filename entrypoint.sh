@@ -39,15 +39,6 @@ EOF
   fi
 }
 
-install_deps() {
-  INSTALL_R="$APP_DIR/$INSTALL_SCRIPT"
-  export R_LIBS="${R_LIBS:-$LIB_DIR}"
-
-  if test -f "$INSTALL_R"; then
-    exec R -f "$INSTALL_R"
-  fi
-}
-
 run_shiny_app() {
   export R_LIBS="${R_LIBS:-$LIB_DIR}"
   export GITHUB_PAT="${GITHUB_PAT:-$REPO_HTTP_TOKEN}"
