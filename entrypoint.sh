@@ -2,15 +2,12 @@
 
 set -e
 
-# This container can operate in three different ways:
+# This container can operate in two different ways:
 # * Initialize the Shiny app Git repository.
-# * Run an install script to store data in the APP_DIR or LIB_DIR directories.
 # * Run the Shiny app.
 main() {
   if test "$1" = "git-init"; then
     git_init
-  elif test "$1" = "install-deps"; then
-    install_deps
   else
     run_shiny_app
   fi

@@ -37,12 +37,6 @@ If you would like to test the image locally follow the steps below:
 
    This mounts the `shiny_example` folder in the Docker container under `/app`, where the entrypoint expects to find it.  You will need to modify the run command if your application is at a different path.
 
-   You can also test the install phase by passing an argument to the run command:
-   ```
-   docker run --rm -p 3838:3838 -v $(pwd)/shiny_example:/app -e APP_DIR=/app civis-services-shiny:test install-deps
-   ```
-
-   This argument is passed along to `entrypoint.sh` to activate the install phase.
 4. Access the app at the ip of your docker host with port 3838:
    ```
    <docker-host-ip>:3838
