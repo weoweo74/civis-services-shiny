@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.0.3] - 2018-02-08
+
+### Removed
+- `install_deps` parameter removed
+
 ## [1.0.2] - 2017-12-19
 
 ### Added
