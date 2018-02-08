@@ -1,6 +1,7 @@
 FROM rocker/verse:3.4.3
 MAINTAINER support@civisanalytics.com
 
+
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && \
     apt-get install -y --no-install-recommends \
         curl \
