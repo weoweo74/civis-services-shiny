@@ -9,6 +9,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && 
     apt-get clean -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Update sensible-utils to get latest security patches
+RUN apt-get install -y --no-install-recommends \
+    sensible-utils
+
 # tuck the python client here just in case
 COPY ./requirements-python.txt /requirements-python.txt
 RUN curl -s https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
