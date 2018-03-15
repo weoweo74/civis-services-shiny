@@ -3,6 +3,7 @@
 
 # Installation
 
+FOOBAR
 Either build the Docker image locally
 ```bash
 docker build -t civis-services-shiny .
