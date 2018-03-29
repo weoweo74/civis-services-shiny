@@ -1,7 +1,6 @@
 shiny
 maps
 tigris
-leaflet
 extrafont
 ReporteRs
 RColorBrewer
