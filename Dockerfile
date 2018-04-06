@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./requirements.txt /requirements.txt
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
+RUN Rscript -e "library(devtools); devtools::install_github('rstudio/shiny'); devtools::install_github('rstudio/httpuv')"
 
 COPY ./app/app.r ./app/app.r
 COPY entrypoint.sh /
