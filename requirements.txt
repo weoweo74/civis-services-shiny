@@ -1,1 +1,6 @@
 shiny
+shinyjs
+ggplot2
+XLConnect
+nloptr
+RRF
