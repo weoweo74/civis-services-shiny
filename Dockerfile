@@ -12,6 +12,4 @@ COPY entrypoint.sh /
 
 EXPOSE 3838
 
-# ENTRYPOINT ["/entrypoint.sh"]
-
-CMD R
+ENTRYPOINT ["/entrypoint.sh"]
