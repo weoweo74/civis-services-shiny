@@ -1,0 +1,8 @@
+[submodule "asyncR"]
+	path = asyncR
+	url = git@github.com:civisanalytics/asyncR.git
+	branch = master
+[submodule "greedyopt"]
+	path = greedyopt
+	url = git@github.com:civisanalytics/greedyopt.git
+	branch = master
