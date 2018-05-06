@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+### Changed
+- Migrate CircleCI build from v1.0 to v2.0
+
 ## [1.0.3] - 2018-02-08
 
 ### Removed
