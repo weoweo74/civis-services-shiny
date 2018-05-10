@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.5
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: docker build -t civisanalytics/civis-services-shiny .
+      - run: docker run --entrypoint=/bin/bash civisanalytics/civis-services-shiny -c "echo BUILDS OK"
+      - run: docker run --entrypoint=/bin/bash civisanalytics/civis-services-shiny -c "Rscript -e \"library(shiny); q(save = 'no')\""
