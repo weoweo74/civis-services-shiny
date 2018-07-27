@@ -6,8 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.1.0] - 2018-07-27
+
 ### Changed
+- Upgraded base image datascience-r from 2.3.0 -> 2.7.0
 - Migrate CircleCI build from v1.0 to v2.0
+
+## [1.0.4] - 2018-03-05
+
+### Added
+- A default shiny app present in app directory.
 
 ## [1.0.3] - 2018-02-08
 
