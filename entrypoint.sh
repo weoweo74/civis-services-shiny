@@ -40,10 +40,12 @@ EOF
 }
 
 install_deps() {
-  INSTALL_R="$APP_DIR/$INSTALL_SCRIPT"
-  export R_LIBS="${R_LIBS:-$LIB_DIR}"
+  INSTALL_SCRIPT="install.R"
+  ABSOLUTE_APP_DIR="$APP_DIR/$REPO_PATH_DIR"
+  INSTALL_R="$ABSOLUTE_APP_DIR/$INSTALL_SCRIPT"
 
   if test -f "$INSTALL_R"; then
+    echo "found install.R YES"
     exec R -f "$INSTALL_R"
   fi
 }
