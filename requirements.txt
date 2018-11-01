@@ -1,8 +1,13 @@
 shiny
 maps
 tigris
-leaflet
 extrafont
 ReporteRs
 RColorBrewer
 htmltools
+DT
+googledrive
+usmap
+tilegramsR
+leaflet
+leaflet.extras
