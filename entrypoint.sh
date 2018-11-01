@@ -45,7 +45,6 @@ install_deps() {
   INSTALL_R="$APP_DIR/$DASHBOARDS_ROOT/$INSTALL_SCRIPT"
 
   if test -f "$INSTALL_R"; then
-    echo "found install.R YES"
     exec R -f "$INSTALL_R"
   fi
 }
