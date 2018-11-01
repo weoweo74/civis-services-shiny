@@ -40,9 +40,9 @@ EOF
 }
 
 install_deps() {
+  DASHBOARDS_ROOT="shiny_apps/forecasting_dashboards"
   INSTALL_SCRIPT="install.R"
-  ABSOLUTE_APP_DIR="$APP_DIR/$REPO_PATH_DIR"
-  INSTALL_R="$ABSOLUTE_APP_DIR/$INSTALL_SCRIPT"
+  INSTALL_R="$APP_DIR/$DASHBOARDS_ROOT/$INSTALL_SCRIPT"
 
   if test -f "$INSTALL_R"; then
     echo "found install.R YES"
