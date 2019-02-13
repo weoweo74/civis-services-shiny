@@ -32,7 +32,7 @@ If you would like to test the image locally follow the steps below:
    ```
 3. Run the container:
    ```
-   docker run --rm -p 3838:3838 -v $(pwd)/shiny_example:/app -e APP_DIR=/app civis-services-shiny:test
+   docker run --rm -p 3838:3838 -e APP_DIR=/app civis-services-shiny:test
    ```
 
    This mounts the `shiny_example` folder in the Docker container under `/app`, where the entrypoint expects to find it.  You will need to modify the run command if your application is at a different path.
@@ -41,6 +41,8 @@ If you would like to test the image locally follow the steps below:
    ```
    <docker-host-ip>:3838
    ```
+
+For example, when using Docker for Mac `<docker-host-ip>` was `127.0.0.1`.
 
 # Contributing
 
