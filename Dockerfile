@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     git
 
 COPY ./requirements.txt /requirements.txt
-RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
+RUN Rscript -e "packages <- readLines('/requirements.txt1'); install.packages(packages)"
 
 COPY ./app/app.r ./app/app.r
 COPY entrypoint.sh /
