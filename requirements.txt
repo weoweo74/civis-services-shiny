@@ -1,1 +1,16 @@
 shiny
+raster
+shiny
+RColorBrewer
+malariaAtlas
+shinydashboard
+stringr
+shinyalert
+shinyBS
+shinythemes
+shinycssloaders
+shinyjs
+mapview
+leaflet
+kableExtra
+plotfunctions
