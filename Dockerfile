@@ -1,7 +1,3 @@
-
-install.packages(packages)
-
-install.packages(packages)
 FROM civisanalytics/civis-services-shiny:1.3
 
 RUN apt-get update && apt-get install -y \
