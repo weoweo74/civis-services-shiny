@@ -1,4 +1,10 @@
+
+## app.R ##
+
+
+
 #Create the ui functions for the dashboard
+
 #### load required libraries ####
 if(!require(raster)){
   install.packages("raster")
